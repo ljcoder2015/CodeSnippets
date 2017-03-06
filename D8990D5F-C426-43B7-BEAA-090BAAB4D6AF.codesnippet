@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>ljButton</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>self.&lt;#button#&gt; = ({
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setTitle:&lt;#title#&gt; forState:UIControlStateNormal];
+    [button setTitleColor:&lt;#titleColor#&gt; forState:UIControlStateNormal];
+        button.titleLabel.font = [UIFont systemFontOfSize:14];
+        button.backgroundColor = CODColorBlue;
+        button.layer.cornerRadius = 3;
+        button.layer.masksToBounds = YES;
+        button;
+    });
+[self.&lt;#superView#&gt; addSubview:self.&lt;#button#&gt;];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D8990D5F-C426-43B7-BEAA-090BAAB4D6AF</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>button</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>mvvm</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    // configureNavigation
+    self.title = &lt;#title#&gt;;
+
+    // viewModel, 如果有需要，在init里面初始化数据
+    self.viewModel = [[&lt;#viewModel#&gt; alloc] init];
+
+    // view
+    [self setupView];
+
+    // RAC
+    @weakify(self);
+    [[RACObserve(self.viewModel, dataArray) ignore:nil] subscribeNext:^(id x) {
+        @strongify(self);
+        [self.tableView reloadData];
+    }];
+    [self.tableView addPullToRefreshWithActionHandler:^{
+        @strongify(self);
+        self.viewModel.pageIndex = 1;
+        [self loadData];
+    }];
+    [self.tableView addInfiniteScrollingWithActionHandler:^{
+        @strongify(self);
+        self.viewModel.pageIndex ++;
+        [self loadData];
+    }];
+
+    // Data
+    [self loadData];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>376C0F01-3C73-4C78-9656-DE63253C118E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>MVVM</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>addpull</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>[self.tableView addPullToRefreshWithActionHandler:^{
+        @strongify(self);
+        self.viewModel.pageIndex = 0;
+        [self loadData];
+    }];
+    [self.tableView addInfiniteScrollingWithActionHandler:^{
+        @strongify(self);
+        [self loadData];
+    }];
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B95EBF3B-F44B-4B08-83ED-BD69F9D84E4C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>addpull</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

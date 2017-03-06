@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>pageData</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>++self.viewModel.pageIndex;
+[[CODHttpClient clientWithPath:&lt;#path#&gt; parameters:@{&lt;#parameters#&gt;,@"pageIndex":@(self.viewModel.pageIndex),@"pageItem":@(CODPageItem)}] startWithBlock:^(id responseObject, NSError *error) {
+        if (error) {
+            [SVProgressHUD showErrorWithStatus:error.localizedDescription];
+            NSLog(@"%@",error);
+            return ;
+        }
+        if (![responseObject[CODStatusKey] isEqualToString:CODStatusSuccess]) {
+            [SVProgressHUD showErrorWithStatus:responseObject[CODMsgKey]];
+            NSLog(@"%@",responseObject[CODMsgKey]);
+            return;
+        }
+        if (self.tableView.pullToRefreshView.state == SVPullToRefreshStateLoading) {
+            [self.tableView.pullToRefreshView stopAnimating];
+            self.tableView.showsInfiniteScrolling = YES;
+        }
+        if (self.tableView.infiniteScrollingView.state == SVInfiniteScrollingStateLoading) {
+            [self.tableView.infiniteScrollingView stopAnimating];
+            self.tableView.showsPullToRefresh = YES;
+        }
+        
+        if (self.viewModel.pageIndex == 1) {
+            self.viewModel.dataArray = nil;
+        }
+        
+        self.tableView.showsInfiniteScrolling = !(self.viewModel.pageIndex &gt;= ceil([responseObject[CODTotalKey] integerValue]/CODPageItem));
+        
+        NSMutableArray *mutableArray = [NSMutableArray arrayWithArray:self.viewModel.dataArray];
+        NSArray *array = [MTLJSONAdapter modelsOfClass:[CODPageviewsModel class] fromJSONArray:responseObject[CODDataKey] error:nil];
+        [mutableArray addObjectsFromArray:array];
+        self.viewModel.dataArray = mutableArray;
+    }];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>81912E33-A5FE-4CBB-869A-DBD79F5294F1</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>pageData</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
