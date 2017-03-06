@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>LJCallBack</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark - LJRequestParametersDataSource
+- (NSDictionary *)requestParametersWithManager:(LJBaseAPI *)manager {
+    
+    if (manager == self.&lt;#API#&gt;) {
+        return @{};
+    }
+    return @{};
+}
+
+#pragma mark - LJRequestCallBackDelegate
+- (void)manager:(LJBaseAPI *)manager requestCallBackSuccess:(id)responseObject {
+    if ([responseObject[LJStatusKey] integerValue] == 1) {
+        [SVProgressHUD showSuccessWithStatus:responseObject[LJMessageKey]];
+        
+        if (manager == self.&lt;#API#&gt;) {
+            
+            [self.navigationController popViewControllerAnimated:YES];
+        }
+    }
+    else {
+        [SVProgressHUD showErrorWithStatus:responseObject[LJMessageKey]];
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>090BFD55-698C-4F84-A29F-DB6E87B5160B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>LJRequestCallBack</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
