@@ -3,19 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>weakSelf</string>
+	<string>left</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@weakify(self);</string>
+	<string>make.left.mas_equalTo(self.&lt;#view#&gt;.mas_right).offset(5);</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>00AB8EE6-AE10-4B16-8619-13B92C59A380</string>
+	<string>A5C7A37D-46EF-42C3-9A1D-FCE331900F3C</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>weakSelf</string>
+	<string>Masory-Left</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -3,19 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>weakSelf</string>
+	<string>LJProtocol</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@weakify(self);</string>
+	<string>&lt;LJRequestParametersDataSource, LJRequestCallBackDelegate&gt;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>00AB8EE6-AE10-4B16-8619-13B92C59A380</string>
+	<string>C350E8E8-05EB-4B3C-A6C0-CA4DECA79B0E</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>weakSelf</string>
+	<string>LJRequestDelegate</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

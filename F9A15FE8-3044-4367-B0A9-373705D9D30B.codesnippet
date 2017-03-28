@@ -3,22 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>weakSelf</string>
+	<string>LJView</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@weakify(self);</string>
+	<string>self.&lt;#View#&gt; = ({
+        UIView *view = [[UIView alloc] init];
+        view.backgroundColor = [UIColor LJ_ColorLine];
+        view;
+    });
+[self.contentView addSubview:self.&lt;#View#&gt;];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>00AB8EE6-AE10-4B16-8619-13B92C59A380</string>
+	<string>F9A15FE8-3044-4367-B0A9-373705D9D30B</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>weakSelf</string>
+	<string>LJView</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

@@ -3,19 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>weakSelf</string>
+	<string>LJImageURL</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>CodeExpression</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@weakify(self);</string>
+	<string>[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",LJImageServerDomain, &lt;#imageUrl#&gt;]]</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>00AB8EE6-AE10-4B16-8619-13B92C59A380</string>
+	<string>3FEC7BB1-7185-438C-AB61-D0F16B41FD73</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>weakSelf</string>
+	<string>LJImageURL</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

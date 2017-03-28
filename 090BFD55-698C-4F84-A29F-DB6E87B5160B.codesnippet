@@ -20,17 +20,34 @@
 
 #pragma mark - LJRequestCallBackDelegate
 - (void)manager:(LJBaseAPI *)manager requestCallBackSuccess:(id)responseObject {
+    
+    [self.&lt;#scrollerView#&gt;.mj_header endRefreshing];
+    
     if ([responseObject[LJStatusKey] integerValue] == 1) {
         [SVProgressHUD showSuccessWithStatus:responseObject[LJMessageKey]];
         
         if (manager == self.&lt;#API#&gt;) {
             
-            [self.navigationController popViewControllerAnimated:YES];
+            NSMutableArray *array = [NSMutableArray arrayWithArray:self.viewModel.dataArray];
+            [array addObjectsFromArray:[MTLJSONAdapter modelsOfClass:[DIYMyProductionModel class] fromJSONArray:responseObject[LJDataKey][LJDataKey] error:nil]];
+            self.viewModel.dataArray = array;
+            
+            if ([responseObject[LJDataKey][LJCurrent_pageKey] integerValue] &gt;= ceilf([responseObject[LJDataKey][LJTotalKey] floatValue]/[responseObject[LJDataKey][LJPer_pageKey] floatValue])) {
+                [self.homeCollectionView.mj_footer endRefreshingWithNoMoreData];
+            }
+            else {
+                self.&lt;#scrollerView#&gt;.mj_footer.hidden = NO;
+            }
         }
     }
     else {
         [SVProgressHUD showErrorWithStatus:responseObject[LJMessageKey]];
     }
+}
+
+- (void)manager:(LJBaseAPI *)manager requestCallBackFailed:(NSError *)error {
+    [self.&lt;#scrollerView#&gt;.mj_header endRefreshing];
+    [self.&lt;#scrollerView#&gt;.mj_footer endRefreshing];
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>090BFD55-698C-4F84-A29F-DB6E87B5160B</string>
@@ -41,6 +58,6 @@
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>0</integer>
+	<integer>2</integer>
 </dict>
 </plist>
