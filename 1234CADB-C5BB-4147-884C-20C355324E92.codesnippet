@@ -15,7 +15,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    &lt;#UITableViewCell#&gt; *cell = [tableView dequeueReusableCellWithIdentifier:@"" forIndexPath:indexPath];
+    &lt;#UITableViewCell#&gt; *cell = [tableView dequeueReusableCellWithIdentifier:&lt;#identifier#&gt; forIndexPath:indexPath];
     return cell;
 }
 
@@ -32,6 +32,6 @@
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>0</integer>
+	<integer>2</integer>
 </dict>
 </plist>

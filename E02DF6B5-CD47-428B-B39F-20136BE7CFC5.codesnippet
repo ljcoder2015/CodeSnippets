@@ -12,6 +12,7 @@
 	<string>self.&lt;#property#&gt; = ({
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
         button.titleLabel.font = [UIFont systemFontOfSize:14];
+        [button setTitleColor:[UIColor LJ_ColorText] forState:UIControlStateNormal];
         [button setTitle:@"&lt;#title#&gt;" forState:UIControlStateNormal];
         button;
     });

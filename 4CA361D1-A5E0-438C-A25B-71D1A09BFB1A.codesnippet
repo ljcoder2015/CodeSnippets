@@ -3,19 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>left</string>
+	<string>right</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>make.left.equalTo(self.&lt;#view#&gt;.mas_left).offset(&lt;#offset#&gt;);</string>
+	<string>make.right.equalTo(self.&lt;#view#&gt;.mas_right).offset(&lt;#offset#&gt;);</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>A5C7A37D-46EF-42C3-9A1D-FCE331900F3C</string>
+	<string>4CA361D1-A5E0-438C-A25B-71D1A09BFB1A</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Masory-Left</string>
+	<string>Masory-right</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

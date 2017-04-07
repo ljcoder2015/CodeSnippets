@@ -3,19 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>left</string>
+	<string>LJImageView</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>make.left.equalTo(self.&lt;#view#&gt;.mas_left).offset(&lt;#offset#&gt;);</string>
+	<string>self.&lt;#imageView#&gt; = ({
+        UIImageView *imageView = [[UIImageView alloc] init];
+        imageView;
+    });
+[self.&lt;#superView#&gt; addSubview:self.&lt;#imageView#&gt;];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>A5C7A37D-46EF-42C3-9A1D-FCE331900F3C</string>
+	<string>47DC020B-94B8-4ADD-8647-4BACF658F70C</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Masory-Left</string>
+	<string>LJImageView</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
