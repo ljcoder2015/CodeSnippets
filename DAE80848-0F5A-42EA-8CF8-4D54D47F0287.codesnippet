@@ -14,6 +14,7 @@
         tableView.delegate = self
         tableView.dataSource = self
         tableView.separatorStyle = .none
+        tableView.backgroundColor = UIColor.lj_ColorBackground()
         tableView.register(&lt;#cell#&gt;.self, forCellReuseIdentifier: &lt;#identifier#&gt;)
         return tableView
     }()

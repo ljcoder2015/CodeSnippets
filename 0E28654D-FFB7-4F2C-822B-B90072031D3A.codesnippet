@@ -20,6 +20,10 @@ extension &lt;#class#&gt;: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: &lt;#cellID#&gt;, for: indexPath)
         return cell
     }
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -&gt; CGFloat {
+        return 80
+    }
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>0E28654D-FFB7-4F2C-822B-B90072031D3A</string>
