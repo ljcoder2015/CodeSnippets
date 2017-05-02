@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>ljImageView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>self.&lt;#imageView#&gt; = ({
+        UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"&lt;#name#&gt;"]];
+        imageView;
+    });
+[self.&lt;#superView#&gt; addSubview:self.&lt;#imageView#&gt;];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>C2530E3A-BD57-4D56-AEFA-730B1A57200E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>LJImageView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
