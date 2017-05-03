@@ -3,22 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>json</string>
+	<string>ljLabel</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (strong, nonatomic) &lt;#class#&gt; *&lt;#name#&gt;;</string>
+	<string>self.&lt;#label#&gt; = ({
+        UILabel *label = [UILabel lj_LabelWithTextColor:[UIColor LJ_ColorText] fontSize:14];
+        label;
+    });
+[self.&lt;#superView#&gt; addSubview:self.&lt;#label#&gt;];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>59CFF74C-03BA-4245-85EB-EC3A6ED7857C</string>
+	<string>8A780414-1A7E-49C1-A7BC-D33CFECBF157</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>property</string>
+	<string>LJLabel</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

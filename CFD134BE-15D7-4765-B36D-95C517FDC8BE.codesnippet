@@ -3,22 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>json</string>
+	<string>ljTableView</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (strong, nonatomic) &lt;#class#&gt; *&lt;#name#&gt;;</string>
+	<string>self.tableView = ({
+        UITableView *tableView = [UITableView lj_tableViewWithType:UITableViewStylePlain dataSource:self delegate:self];
+        tableView;
+    });
+    [self.view addSubview:self.tableView];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>59CFF74C-03BA-4245-85EB-EC3A6ED7857C</string>
+	<string>CFD134BE-15D7-4765-B36D-95C517FDC8BE</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>property</string>
+	<string>LJTableView</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

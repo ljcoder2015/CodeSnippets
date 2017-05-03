@@ -3,22 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>json</string>
+	<string>ljImageView</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (strong, nonatomic) &lt;#class#&gt; *&lt;#name#&gt;;</string>
+	<string>self.&lt;#imageView#&gt; = ({
+        UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"&lt;#name#&gt;"]];
+        imageView;
+    });
+[self.&lt;#superView#&gt; addSubview:self.&lt;#imageView#&gt;];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>59CFF74C-03BA-4245-85EB-EC3A6ED7857C</string>
+	<string>C2530E3A-BD57-4D56-AEFA-730B1A57200E</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>property</string>
+	<string>LJImageView</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
