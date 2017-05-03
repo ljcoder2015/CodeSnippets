@@ -16,7 +16,8 @@
         collectionView.dataSource = self;
         collectionView.delegate = self;
         collectionView;
-    });</string>
+    });
+    [self.&lt;#super#&gt; addSubview:self.&lt;#collectionView#&gt;];</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>3A6CD686-6A73-46F6-B1EF-651E31B819EA</string>
 	<key>IDECodeSnippetLanguage</key>
