@@ -3,23 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>ljImageView</string>
+	<string>ljCollectionView</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>self.&lt;#imageView#&gt; = ({
-        UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"&lt;#name#&gt;"]];
-        imageView;
-    });
-[self.&lt;#superView#&gt; addSubview:self.&lt;#imageView#&gt;];</string>
+	<string>    self.collectionView = ({
+        UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+        layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+        UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
+        collectionView.dataSource = self;
+        collectionView.delegate = self;
+        collectionView;
+    });</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>C2530E3A-BD57-4D56-AEFA-730B1A57200E</string>
+	<string>3A6CD686-6A73-46F6-B1EF-651E31B819EA</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>LJImageView</string>
+	<string>LJCollectionView-OC</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
