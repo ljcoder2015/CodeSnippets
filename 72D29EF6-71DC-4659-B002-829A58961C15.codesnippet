@@ -10,8 +10,8 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>fileprivate lazy var &lt;#label#&gt;: UILabel = {
-        let label = UILabel.lj_Label(withTextColor: UIColor.lj_ColorText(), fontSize: 14)
-        return label!
+        let label = UILabel.lj_label()
+        return label
     }()</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>72D29EF6-71DC-4659-B002-829A58961C15</string>

@@ -14,9 +14,6 @@ extension &lt;#class#&gt; {
     
     fileprivate func setupUI() {
         
-        tableView.delegate = self
-        tableView.dataSource = self
-        view.addSubview(tableView)
     }
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
