@@ -9,7 +9,7 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>make.top.equalTo(self.&lt;#view#&gt;.mas_top).offset(&lt;#offset#&gt;);</string>
+	<string>make.top.equalTo(self.&lt;#view#&gt;).offset(&lt;#offset#&gt;);</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>C9242FD3-FF03-458F-BCBB-C92775929469</string>
 	<key>IDECodeSnippetLanguage</key>
