@@ -3,25 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>setupNavigation</string>
+	<string>bindViewModel</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>// MARK: setupNavigation
+	<string>// MARK: BindViewModel
 extension &lt;#class#&gt; {
-    
-    fileprivate func setupNavigation() {
+    fileprivate func bindViewModel() {
         
     }
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>D80B03DF-8EAC-4178-8100-59F2EFCFE90A</string>
+	<string>848FE550-F04F-4F85-84A4-9941DF7714F5</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>setupNavigation</string>
+	<string>BindViewModel</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

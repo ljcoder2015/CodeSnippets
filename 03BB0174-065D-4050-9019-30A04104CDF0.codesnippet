@@ -9,7 +9,7 @@
 		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>// MAEK: UICollectionViewDelegate &amp; UICollectionViewDataSource
+	<string>// MARK: UICollectionViewDelegate &amp; UICollectionViewDataSource
 extension &lt;#class#&gt;: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -&gt; Int {
@@ -17,7 +17,7 @@ extension &lt;#class#&gt;: UICollectionViewDelegate, UICollectionViewDataSource 
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -&gt; UICollectionViewCell {
-        let cell = collection.dequeueReusableCell(withReuseIdentifier: &lt;#indentifier#&gt;, for: indexPath) as! &lt;#cell#&gt;
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: &lt;#indentifier#&gt;, for: indexPath) as! &lt;#cell#&gt;
         
         return cell
     }
@@ -34,9 +34,9 @@ extension &lt;#class#&gt;: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -&gt; CGSize {
         
-        guard let titles = self.titles else {
-            return CGSize(width: 0, height: 0)
-        }
+
+        return CGSize(width: 0, height: 0)
+        
         
         return CGSize(width: self.bounds.width/CGFloat(titles.count), height: self.bounds.size.height)
     }
