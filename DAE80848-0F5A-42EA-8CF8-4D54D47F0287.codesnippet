@@ -10,7 +10,7 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>    fileprivate lazy var tableView: UITableView = {
-        let tableView = UITableView.lj_tableView(withType: &lt;#style#&gt;, dataSource: self, delegate: self)
+        let tableView: UITableView = UITableView.lj_tableView(withType: &lt;#style#&gt;, dataSource: self, delegate: self)
         tableView?.backgroundColor = UIColor.lj_ColorBackground()
         tableView?.register(&lt;#cell#&gt;.self, forCellReuseIdentifier: &lt;#cellID#&gt;)
         return tableView!
@@ -21,7 +21,7 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>LJTableView</string>
+	<string>LJTableView-Swift</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
