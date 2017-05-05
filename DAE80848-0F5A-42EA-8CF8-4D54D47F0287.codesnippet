@@ -9,11 +9,11 @@
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    fileprivate lazy var tableView: UITableView = {
-        let tableView: UITableView = UITableView.lj_tableView(withType: &lt;#style#&gt;, dataSource: self, delegate: self)
-        tableView?.backgroundColor = UIColor.lj_ColorBackground()
-        tableView?.register(&lt;#cell#&gt;.self, forCellReuseIdentifier: &lt;#cellID#&gt;)
-        return tableView!
+	<string>fileprivate lazy var tableView: UITableView = {
+        let tableView: UITableView = UITableView.lj_tableView(style: .grouped, dataSource: self, delegate: self)
+        tableView.backgroundColor = UIColor.lj_ColorBackground()
+        tableView.register(&lt;#cell#&gt;.self, forCellReuseIdentifier: &lt;#cellID#&gt;)
+        return tableView
     }()
 </string>
 	<key>IDECodeSnippetIdentifier</key>
