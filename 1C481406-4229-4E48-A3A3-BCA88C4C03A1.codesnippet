@@ -3,23 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>ljTableView</string>
+	<string>setupUI</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>self.tableView = ({
-        UITableView *tableView = [UITableView lj_tableViewWithType:UITableViewStyleGrouped dataSource:self delegate:self];
-        tableView;
-    });
-    [self.view addSubview:self.tableView];</string>
+	<string>#pragma mark - setupUI
+- (void)setupUI {
+    
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>CFD134BE-15D7-4765-B36D-95C517FDC8BE</string>
+	<string>1C481406-4229-4E48-A3A3-BCA88C4C03A1</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>LJTableView-OC</string>
+	<string>setupUI-OC</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
