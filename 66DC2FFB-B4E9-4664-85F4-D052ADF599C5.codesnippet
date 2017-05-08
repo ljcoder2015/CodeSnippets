@@ -3,23 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>ljTableView</string>
+	<string>LJButton</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>self.tableView = ({
-        UITableView *tableView = [UITableView lj_tableViewWithType:UITableViewStyleGrouped dataSource:self delegate:self];
-        tableView;
+	<string>self.&lt;#button#&gt; = ({
+        UIButton *button = [UIButton lj_buttonWithTitile:@"&lt;#title#&gt;" titleColor:[UIColor LJ_ColorText] fontSize:14 image:[UIImage imageNamed:@"&lt;#image#&gt;"]];
+        button;
     });
-    [self.view addSubview:self.tableView];</string>
+[self.&lt;#superView#&gt; addSubview:self.&lt;#button#&gt;];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>CFD134BE-15D7-4765-B36D-95C517FDC8BE</string>
+	<string>66DC2FFB-B4E9-4664-85F4-D052ADF599C5</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>LJTableView-OC</string>
+	<string>LJButton-OC</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
