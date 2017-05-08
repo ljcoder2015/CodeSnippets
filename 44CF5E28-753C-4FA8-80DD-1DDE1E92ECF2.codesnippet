@@ -9,9 +9,8 @@
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>fileprivate lazy var &lt;#name#&gt;: UIImageView = {
-        let imageView = UIImageView(image:&lt;#image#&gt;)
-        imageView.backgroundColor = UIColor.lj_ColorGray()
+	<string>fileprivate lazy var avartImageView: UIImageView = {
+        let imageView = UIImageView.lj_imageView(image: &lt;#T##UIImage?#&gt;)
         return imageView
     }()</string>
 	<key>IDECodeSnippetIdentifier</key>
