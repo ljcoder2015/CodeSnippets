@@ -3,25 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>LJTextField</string>
+	<string>bindViewModel</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>fileprivate lazy var &lt;#textField#&gt;: UITextField = {
-        let textField: UITextField = UITextField.lj_textField(placeholder: &lt;#placeholder#&gt;, leftView: &lt;#left#&gt;, rightView: &lt;#right#&gt;)
-        return textField
-    }()</string>
+	<string>// MARK: bindViewModel
+    override func bindViewModel() {
+        
+    }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>70BB1109-6892-40D5-9D70-B2BD0D6D334F</string>
+	<string>49F29DE0-F78B-45AB-862C-299E2C760D97</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>LJTextField-Swift</string>
+	<string>BindeViewModel-Swift</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
