@@ -22,7 +22,11 @@ extension &lt;#class#&gt;: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -&gt; CGFloat {
-        return 80
+        return 44
+    }
+
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -&gt; CGFloat {
+        return 0.001
     }
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
