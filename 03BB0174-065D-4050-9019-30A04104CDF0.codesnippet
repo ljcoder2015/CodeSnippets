@@ -33,12 +33,8 @@ extension &lt;#class#&gt;: UICollectionViewDelegate, UICollectionViewDataSource 
 extension &lt;#class#&gt;: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -&gt; CGSize {
-        
 
-        return CGSize(width: 0, height: 0)
-        
-        
-        return CGSize(width: self.bounds.width/CGFloat(titles.count), height: self.bounds.size.height)
+        return CGSize(width: floor(self.bounds.width/2), height: floor(self.bounds.height/2)-1)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -&gt; UIEdgeInsets {
@@ -46,6 +42,10 @@ extension &lt;#class#&gt;: UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -&gt; CGFloat {
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -&gt; CGFloat {
         return 0
     }
 }</string>

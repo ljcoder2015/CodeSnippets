@@ -3,22 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>ljbutton</string>
+	<string>edges</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>CodeExpression</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>fileprivate lazy var &lt;#button#&gt;: UIButton = {
-        let button = UIButton.lj_button(title: &lt;#title#&gt;, titleColor: &lt;#titleColor#&gt;, size: &lt;#size#&gt;, image: &lt;#image#&gt;)
-        return button
-    }()</string>
+	<string>make.edges.equalTo(&lt;#tagert#&gt;).inset(UIEdgeInsets(top: &lt;#top#&gt;, left: &lt;#left#&gt;, bottom: &lt;#bottom#&gt;, right: &lt;#right#&gt;))</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>2CF7FF8E-AE75-4184-A086-7443045375A6</string>
+	<string>3309220C-5E64-4AC2-89FF-6FEB4E3FD12A</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>ljButton</string>
+	<string>snp-edges</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

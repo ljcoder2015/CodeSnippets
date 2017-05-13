@@ -3,22 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>ljbutton</string>
+	<string>LJCollectionView</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>fileprivate lazy var &lt;#button#&gt;: UIButton = {
-        let button = UIButton.lj_button(title: &lt;#title#&gt;, titleColor: &lt;#titleColor#&gt;, size: &lt;#size#&gt;, image: &lt;#image#&gt;)
-        return button
+	<string>    fileprivate lazy var passwordCollectionView: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        let collection = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collection.dataSource = self
+        collection.delegate = self
+        collection.register(LEMPasswordCollectionViewCell.self, forCellWithReuseIdentifier: kLEMPasswordCollectionViewCell)
+        return collection
     }()</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>2CF7FF8E-AE75-4184-A086-7443045375A6</string>
+	<string>D3E29B79-E431-4ACD-9DB8-06DD32372917</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>ljButton</string>
+	<string>UICollectionView-swift</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
