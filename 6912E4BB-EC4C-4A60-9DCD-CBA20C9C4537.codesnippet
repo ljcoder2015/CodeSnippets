@@ -9,9 +9,10 @@
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>lazy var &lt;#api#&gt;: LJBaseAPI = {
+	<string>fileprivate lazy var &lt;#api#&gt;: LJBaseAPI = {
         let api = LJBaseAPI()
         api.requestDelegate = self
+        api.callBackDelegate = self
         return api
     }()</string>
 	<key>IDECodeSnippetIdentifier</key>
@@ -23,6 +24,6 @@
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>0</integer>
+	<integer>2</integer>
 </dict>
 </plist>

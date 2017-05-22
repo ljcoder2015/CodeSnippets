@@ -3,24 +3,36 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>global</string>
+	<string>ljrequest</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>import Alamofire
-import HandyJSON
-#if !RX_NO_MODULE
-    import RxSwift
-    import RxCocoa
-#endif</string>
+	<string>extension &lt;#class#&gt;: LJRequest, LJRequestCallBack {
+    
+    func method(_ api: LJBaseAPI) -&gt; HTTPMethod {
+        return .post
+    }
+    
+    func route(_ api: LJBaseAPI) -&gt; String {
+        return &lt;#route#&gt;
+    }
+    
+    func callBackSuccess(_ api: LJBaseAPI, result: NSDictionary) {
+        
+    }
+    
+    func callBackFailed(_ api: LJBaseAPI, error: Error) {
+        
+    }
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>EAC12437-CC33-4BDA-AFA1-36E7EDAB8AC6</string>
+	<string>CC1457A0-012D-47D4-A3DA-742259253991</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>import global</string>
+	<string>LJRequest - swift</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
