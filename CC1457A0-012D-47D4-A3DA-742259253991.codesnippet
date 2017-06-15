@@ -19,11 +19,11 @@
         return &lt;#route#&gt;
     }
     
-    func callBackSuccess(_ api: LJBaseAPI, result: NSDictionary) {
+    func callSuccess(_ api: LJBaseAPI, result: LJResponse) {
         
     }
     
-    func callBackFailed(_ api: LJBaseAPI, error: Error) {
+    func callFailed(_ api: LJBaseAPI, error: Error) {
         
     }
 }</string>
