@@ -11,7 +11,7 @@
 	<key>IDECodeSnippetContents</key>
 	<string>fileprivate lazy var &lt;#view#&gt;: UIView = {
         let view = UIView()
-        view.backgroundColor = UIColor.lj_ColorLine()
+        view.backgroundColor = UIColor.lj.line
         return view
     }()</string>
 	<key>IDECodeSnippetIdentifier</key>

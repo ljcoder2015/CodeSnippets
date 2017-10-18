@@ -3,22 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>LJImageView</string>
+	<string>drive</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>fileprivate lazy var &lt;#imageView#&gt;: UIImageView = {
-        let imageView = UIImageView.lj.imageView()
-        return imageView
-    }()</string>
+	<string>viewModel.&lt;#driver#&gt;
+            .drive(onNext: { (result) in
+                if result.isSuccess {
+                    
+                }
+            })
+            .disposed(by: disposeBag)</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>44CF5E28-753C-4FA8-80DD-1DDE1E92ECF2</string>
+	<string>1345AF46-CB39-4DA5-95C3-9FC044600211</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>LJImageView</string>
+	<string>drive</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

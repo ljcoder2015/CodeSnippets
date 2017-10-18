@@ -10,9 +10,7 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>fileprivate lazy var &lt;#api#&gt;: LJBaseAPI = {
-        let api = LJBaseAPI()
-        api.requestDelegate = self
-        api.callBackDelegate = self
+        let api = LJBaseAPI(delegate: self)
         return api
     }()</string>
 	<key>IDECodeSnippetIdentifier</key>

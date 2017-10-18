@@ -11,16 +11,8 @@
 	<key>IDECodeSnippetContents</key>
 	<string>extension &lt;#class#&gt;: LJRequest, LJRequestCallBack {
     
-    func method(_ api: LJBaseAPI) -&gt; LJHTTPMethod {
-        return .post
-    }
-    
     func route(_ api: LJBaseAPI) -&gt; String {
         return "&lt;#route#&gt;"
-    }
-    
-    func callFailed(_ api: LJBaseAPI, error: Error) {
-        
     }
     
     func callSuccess(_ api: LJBaseAPI, result: LJResponse) {

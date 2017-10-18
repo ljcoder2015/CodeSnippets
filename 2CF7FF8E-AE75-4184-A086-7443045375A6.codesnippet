@@ -10,7 +10,7 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>fileprivate lazy var &lt;#button#&gt;: UIButton = {
-        let button = UIButton.lj_button(title: &lt;#title#&gt;, titleColor: &lt;#titleColor#&gt;, size: &lt;#size#&gt;, image: &lt;#image#&gt;)
+        let button = UIButton.lj.button(title: &lt;#title#&gt;, titleColor: &lt;#color#&gt;, fontStyle: .body, image: &lt;#image#&gt;)
         return button
     }()</string>
 	<key>IDECodeSnippetIdentifier</key>

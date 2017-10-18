@@ -34,7 +34,7 @@ extension &lt;#class#&gt;: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -&gt; CGSize {
 
-        return CGSize(width: floor(self.bounds.width/2), height: floor(self.bounds.height/2)-1)
+        return CGSize(width:&lt;#width#&gt;, height:&lt;#height#&gt;)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -&gt; UIEdgeInsets {

@@ -13,7 +13,6 @@
             make.top.equalTo(&lt;#target#&gt;).offset(&lt;#offset#&gt;)
             make.left.equalTo(&lt;#target#&gt;).offset(&lt;#offset#&gt;)
             make.right.equalTo(&lt;#target#&gt;).offset(&lt;#offset#&gt;)
-            make.bottom.equalTo(&lt;#target#&gt;).offset(&lt;#offset#&gt;)
         }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>8254BC97-0B29-43A8-B703-BA7367FE2DB5</string>

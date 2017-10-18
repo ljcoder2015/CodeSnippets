@@ -10,7 +10,7 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>fileprivate lazy var &lt;#label#&gt;: UILabel = {
-        let label = UILabel.lj_label()
+        let label = UILabel.lj.label()
         return label
     }()</string>
 	<key>IDECodeSnippetIdentifier</key>

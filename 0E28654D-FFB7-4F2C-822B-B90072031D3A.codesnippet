@@ -28,6 +28,14 @@ extension &lt;#class#&gt;: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -&gt; CGFloat {
         return 0.001
     }
+
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -&gt; UIView? {
+        return nil
+    }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -&gt; UIView? {
+        return nil
+    }
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>0E28654D-FFB7-4F2C-822B-B90072031D3A</string>
