@@ -3,26 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>setupCell</string>
+	<string>shadeView</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>extension &lt;#cell#&gt; {
-func setup(_ optionModel: &lt;#model#&gt;?) {
-        guard let model = optionModel else {
-            return
-        }
-        
-    }
-}</string>
+	<string>    fileprivate lazy var shadeView: UIView = {
+        let view = UIView()
+        view.backgroundColor = UIColor.black.withAlphaComponent(0.3)
+        view.frame = UIScreen.main.bounds
+        return view
+    }()</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>BD0B18BA-EE7D-4D27-BE93-30A83A9935F2</string>
+	<string>E695EE1A-CE45-4982-B769-8041E4D6881F</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>shadeView</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>setupCell</string>
+	<string>shadeView</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>SpreadsheetViewDataSource</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// MARK: SpreadsheetViewDataSource
+extension LJProductViewController: SpreadsheetViewDataSource, SpreadsheetViewDelegate {
+    
+    func numberOfColumns(in spreadsheetView: SpreadsheetView) -&gt; Int {
+        return titles.count
+    }
+    
+    func numberOfRows(in spreadsheetView: SpreadsheetView) -&gt; Int {
+        return 200
+    }
+    
+    func spreadsheetView(_ spreadsheetView: SpreadsheetView, cellForItemAt indexPath: IndexPath) -&gt; Cell? {
+        
+        if indexPath.row &gt; 0 {
+            if titles[indexPath.column] == "图" {
+                guard let cell = spreadsheetView.dequeueReusableCell(withReuseIdentifier: kLJImageCell, for: indexPath) as? LJImageCell else {
+                    fatalError("spreadsheetView cell reuse error")
+                }
+                cell.gridlines.top = .none
+                cell.gridlines.left = .none
+                if type == 1 {
+                    cell.gridlines.right = .solid(width: 1, color: UIColor.lj.blodLine)
+                }
+                else {
+                    cell.gridlines.right = .none
+                }
+                cell.gridlines.bottom = .solid(width: 0.5, color: UIColor.lj.line)
+                return cell
+            }
+            
+            if titles[indexPath.column] == "选择" {
+                guard let cell = spreadsheetView.dequeueReusableCell(withReuseIdentifier: kLJSelectCell, for: indexPath) as? LJSelecteCell else {
+                    fatalError("spreadsheetView cell reuse error")
+                }
+                cell.gridlines.top = .none
+                cell.gridlines.left = .none
+                cell.gridlines.right = .none
+                cell.gridlines.bottom = .solid(width: 0.5, color: UIColor.lj.line)
+                return cell
+            }
+        }
+        
+        guard let cell = spreadsheetView.dequeueReusableCell(withReuseIdentifier: kLJProductTitleCell, for: indexPath) as? LJProductTitleCell else {
+            fatalError("spreadsheetView cell reuse error")
+        }
+        
+        cell.gridlines.top = .none
+        cell.gridlines.left = .none
+        cell.gridlines.right = .none
+        cell.gridlines.bottom = .solid(width: 0.5, color: UIColor.lj.line)
+        if indexPath.row == 0 {
+            cell.titleLabel.textColor = UIColor.lj.text
+            cell.gridlines.bottom = .solid(width: 1, color: UIColor.lj.blodLine)
+            cell.titleLabel.text = titles[indexPath.column]
+            if indexPath.column == 4{
+                cell.gridlines.right = .solid(width: 1, color: UIColor.lj.blodLine)
+            }
+        }
+        else {
+            cell.titleLabel.textColor = UIColor.lj.gray999
+            if indexPath.column == 4 {
+                cell.gridlines.right = .solid(width: 1, color: UIColor.lj.blodLine)
+            }
+            if indexPath.column == 0 &amp;&amp; indexPath.row &gt; 0 {
+                cell.titleLabel.text = "\(indexPath.row)"
+            }
+        }
+        return cell
+    }
+    
+    func spreadsheetView(_ spreadsheetView: SpreadsheetView, widthForColumn column: Int) -&gt; CGFloat {
+        if titles[column] == "图" || titles[column] == "选择" {
+            return 60
+        }
+        if column == 0 {
+            return 80
+        }
+        if column == 5 {
+            return 180
+        }
+        return 100
+    }
+    
+    func spreadsheetView(_ spreadsheetView: SpreadsheetView, heightForRow row: Int) -&gt; CGFloat {
+        return 49
+    }
+    
+    func spreadsheetView(_ spreadsheetView: SpreadsheetView, didSelectItemAt indexPath: IndexPath) {
+        if titles[indexPath.column] == "图" &amp;&amp; indexPath.row &gt; 0 {
+            let imageVC = LJImageBrowerViewController()
+            let nvc = LJBaseNavigationController(rootViewController: imageVC)
+            nvc.modalPresentationStyle = .popover
+            nvc.preferredContentSize = CGSize(width: 360, height: 350)
+            
+            let popover = nvc.popoverPresentationController
+            popover?.delegate = self
+            popover?.permittedArrowDirections = UIPopoverArrowDirection.init(rawValue: 0)
+            popover?.sourceView = self.view
+            popover?.sourceRect = CGRect(x: self.view.center.x-360/2, y: self.view.center.y-350/2, width: 360, height: 350)
+            self.present(nvc, animated: true, completion: nil)
+        }
+    }
+    
+    func frozenColumns(in spreadsheetView: SpreadsheetView) -&gt; Int {
+        return 5
+    }
+    
+    func frozenRows(in spreadsheetView: SpreadsheetView) -&gt; Int {
+        return 1
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>6CB50BAC-2029-4796-923C-54114187370B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>SpreadsheetViewDataSource</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>SpreadsheetViewDataSource</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
