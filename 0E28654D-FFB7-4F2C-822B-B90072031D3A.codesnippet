@@ -17,7 +17,10 @@ extension &lt;#class#&gt;: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -&gt; UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: &lt;#cellID#&gt;, for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: &lt;#cellId#&gt;, for: indexPath) as? &lt;#cell#&gt; else {
+            fatalError("&lt;#cell#&gt; reuse error")
+        }
+
         return cell
     }
 
