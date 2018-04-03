@@ -10,7 +10,7 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>fileprivate lazy var &lt;#textField#&gt;: UITextField = {
-        let textField: UITextField = UITextField.lj_textField(placeholder: &lt;#placeholder#&gt;, leftView: &lt;#left#&gt;, rightView: &lt;#right#&gt;)
+        let textField: UITextField = UITextField.lj.textField(placeholder: &lt;#placeholder#&gt;, leftView: &lt;#left#&gt;, rightView: &lt;#right#&gt;)
         return textField
     }()</string>
 	<key>IDECodeSnippetIdentifier</key>
