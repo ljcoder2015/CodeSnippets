@@ -11,7 +11,7 @@
 	<key>IDECodeSnippetContents</key>
 	<string>fileprivate lazy var tableView: UITableView = {
         let tableView: UITableView = UITableView.lj.tableView(dataSource: self, delegate: self)
-        tableView.backgroundColor = UIColor.lj.background
+        tableView.backgroundColor = UIColor.white
         tableView.register(&lt;#cell#&gt;.self, forCellReuseIdentifier: &lt;#cellID#&gt;)
         return tableView
     }()
