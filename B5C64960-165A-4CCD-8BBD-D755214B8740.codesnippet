@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>textBind</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let &lt;#name#&gt;Variabel = Variable&lt;String&gt;("")
+_ = &lt;#textField#&gt;.rx.textInput &lt;-&gt; &lt;#Variabel#&gt;
+&lt;#Variabel#&gt;.asObservable()
+            .subscribe(onNext: { [weak self] (text) in
+                
+            })
+            .disposed(by: disposeBag)</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B5C64960-165A-4CCD-8BBD-D755214B8740</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>text bind</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

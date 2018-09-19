@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>cellUpdate</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>func update(_ model: &lt;#model#&gt;) {
+&lt;#imageView#&gt;.kf.setImage(with: URL(string: "\(LJImageServerDomain)\(&lt;#path#&gt;)"), placeholder: UIImage.lj.image(with: UIColor.lj.highlightBackground), options: nil, progressBlock: nil, completionHandler: nil)
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>222AD91A-F47C-46D4-9A45-9663B1ECACF9</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>cellUpdate</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>cell-update</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
