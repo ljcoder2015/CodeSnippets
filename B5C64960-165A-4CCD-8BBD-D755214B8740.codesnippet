@@ -12,7 +12,7 @@
 	<string>let &lt;#name#&gt;Variabel = Variable&lt;String&gt;("")
 _ = &lt;#textField#&gt;.rx.textInput &lt;-&gt; &lt;#Variabel#&gt;
 &lt;#Variabel#&gt;.asObservable()
-            .subscribe(onNext: { [weak self] (text) in
+            .subscribe(onNext: { [unowned self] (text) in
                 
             })
             .disposed(by: disposeBag)</string>

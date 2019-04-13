@@ -10,7 +10,7 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>viewModel.&lt;#driver#&gt;
-            .drive(onNext: { [weak self] (result) in
+            .drive(onNext: { [unowned self] (result) in
                 if result.isSuccess {
                     
                 }

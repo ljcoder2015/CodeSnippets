@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>refresh</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>tableView.es.addPullToRefresh { [weak self] in
+    guard let `self` = self else { return }
+    self.tableView.es.noticeNoMoreData()
+    self.page = 1
+    self.list.removeAll()
+    viewModel.fetchList(page: self.page)
+}
+
+tableView.es.addInfiniteScrolling { [weak self] in
+    guard let `self` = self else { return }
+    self.page += 1
+    viewModel.fetchList(page: self.page)
+}
+
+viewModel.listDriver
+.drive(onNext: { [weak self] (result) in
+    guard let `self` = self else { return }
+    
+    self.tableView.es.stopPullToRefresh()
+    self.tableView.es.stopLoadingMore()
+    
+    if result.isSuccess {
+        self.list.append(contentsOf: result.data?.list ?? [])
+        self.tableView.reloadData()
+    }
+})
+.disposed(by: disposeBag)
+
+viewModel.moreDriver
+.drive(onNext: { [weak self] (result) in
+    guard let `self` = self else { return }
+    
+    if !result {
+        self.tableView.es.noticeNoMoreData()
+    }
+})
+.disposed(by: disposeBag)</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F3EB86A9-7948-4CEC-A0DE-C47D07DCA37F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>refresh</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>PullRefresh</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
