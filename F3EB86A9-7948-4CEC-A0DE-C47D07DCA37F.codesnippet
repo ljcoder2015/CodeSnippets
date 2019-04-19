@@ -14,6 +14,7 @@
     self.tableView.es.noticeNoMoreData()
     self.page = 1
     self.list.removeAll()
+    self.tableView.reloadData()
     viewModel.fetchList(page: self.page)
 }
 
