@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>keyboardHandler</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// MARK: keyboard handler
+extension &lt;#class#&gt; {
+    @objc func keyboardWillShow(_ noti: Notification) {
+        let duration = noti.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? Float ?? 0.3
+        guard let rect = noti.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect else { return }
+        let height = rect.size.height
+        
+        &lt;#constraint#&gt;.constant = height
+        UIView.animate(withDuration: TimeInterval(duration), animations: { [weak self] in
+            self?.view.layoutIfNeeded()
+        }) { (finish) in
+            
+        }
+        
+    }
+    
+    @objc func keyboardWillHidden(_ noti: Notification) {
+        let duration = noti.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? Float ?? 0.3
+        
+        &lt;#constraint#&gt;.constant = 0
+        UIView.animate(withDuration: TimeInterval(duration), animations: { [weak self] in
+            self?.view.layoutIfNeeded()
+        }) { (finish) in
+            
+        }
+    }
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B28DDB8D-85E2-4A85-8EC4-E7CD2875E54A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>keyboardHandler</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>My Code Snippet</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
