@@ -10,14 +10,16 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>&lt;#view#&gt;.snp.makeConstraints { (make) in
-            make.top.equalTo(&lt;#target#&gt;).offset(&lt;#offset#&gt;)
-            make.left.equalTo(&lt;#target#&gt;).offset(&lt;#offset#&gt;)
-            make.right.equalTo(&lt;#target#&gt;).offset(&lt;#offset#&gt;)
+            make.top.equalTo(&lt;#target#&gt;)
+            make.left.equalTo(&lt;#target#&gt;)
+            make.right.equalTo(&lt;#target#&gt;)
         }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>8254BC97-0B29-43A8-B703-BA7367FE2DB5</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
 	<string>snp</string>
 	<key>IDECodeSnippetUserSnippet</key>

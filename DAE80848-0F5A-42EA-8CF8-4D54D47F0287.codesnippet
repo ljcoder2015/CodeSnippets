@@ -9,7 +9,7 @@
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>fileprivate lazy var tableView: UITableView = {
+	<string>private lazy var tableView: UITableView = {
         let tableView: UITableView = UITableView.lj.tableView(dataSource: self, delegate: self)
         tableView.backgroundColor = UIColor.white
         tableView.register(&lt;#cell#&gt;.self, forCellReuseIdentifier: "&lt;#cellID#&gt;")
@@ -20,6 +20,8 @@
 	<string>DAE80848-0F5A-42EA-8CF8-4D54D47F0287</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
 	<string>LJTableView-Swift</string>
 	<key>IDECodeSnippetUserSnippet</key>

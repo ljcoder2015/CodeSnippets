@@ -9,7 +9,7 @@
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>fileprivate lazy var &lt;#view#&gt;: UIView = {
+	<string>private lazy var &lt;#view#&gt;: UIView = {
         let view = UIView()
         view.backgroundColor = UIColor.lj.line
         return view
@@ -18,6 +18,8 @@
 	<string>FDA49C60-DAF3-4AC5-831A-8D23B9956A76</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
 	<string>ljView</string>
 	<key>IDECodeSnippetUserSnippet</key>

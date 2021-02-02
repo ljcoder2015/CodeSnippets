@@ -9,7 +9,7 @@
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>fileprivate lazy var &lt;#imageView#&gt;: UIImageView = {
+	<string>private lazy var &lt;#imageView#&gt;: UIImageView = {
         let imageView = UIImageView.lj.imageView()
         return imageView
     }()</string>
@@ -17,6 +17,8 @@
 	<string>44CF5E28-753C-4FA8-80DD-1DDE1E92ECF2</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
 	<string>LJImageView</string>
 	<key>IDECodeSnippetUserSnippet</key>

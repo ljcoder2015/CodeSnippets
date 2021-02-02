@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>mj_refresh</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>tableView.mj_header = MJRefreshNormalHeader(refreshingBlock: { [weak self] in
+            guard let `self` = self else { return }
+
+            self.page = 1
+            self.list.removeAll()
+            self.tableView.reloadData()
+            self.viewModel.fetchList(page: self.page)
+        })
+
+        tableView.mj_footer = MJRefreshAutoNormalFooter(refreshingBlock: { [weak self] in
+            guard let `self` = self else { return }
+            self.page += 1
+            self.viewModel.fetchList(page: self.page)
+        })
+        
+        viewModel.listDriver
+            .drive(onNext: { [weak self] (result) in
+                guard let `self` = self else { return }
+                if self.tableView.mj_header?.isRefreshing ?? false {
+                    self.tableView.mj_header?.endRefreshing()
+                }
+                if self.tableView.mj_footer?.isRefreshing ?? false {
+                    self.tableView.mj_footer?.endRefreshing()
+                }
+
+                if result.isSuccess {
+                    self.list.append(contentsOf: result.data?.list ?? [])
+                    self.tableView.reloadData()
+                }
+            })
+            .disposed(by: disposeBag)
+        
+        viewModel.moreDriver
+            .drive(onNext: { [weak self] (result) in
+                guard let `self` = self else { return }
+
+                self.tableView.mj_footer?.isHidden = !result
+            })
+            .disposed(by: disposeBag)
+
+        // 第一次隐藏，等请求完毕看是否需要显示
+        tableView.mj_footer?.isHidden = true
+
+self.tableView.mj_header?.beginRefreshing()</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>A3ABFB47-89FC-4F50-B394-C6C613271EE4</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>mjRefresh</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>MJRefresh</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

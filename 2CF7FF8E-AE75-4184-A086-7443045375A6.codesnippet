@@ -9,7 +9,7 @@
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>fileprivate lazy var &lt;#button#&gt;: UIButton = {
+	<string>private lazy var &lt;#button#&gt;: UIButton = {
         let button = UIButton.lj.button(title: &lt;#title#&gt;, titleColor: &lt;#color#&gt;, fontStyle: .body, image: &lt;#image#&gt;)
         return button
     }()</string>
@@ -17,6 +17,8 @@
 	<string>2CF7FF8E-AE75-4184-A086-7443045375A6</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
 	<string>ljButton</string>
 	<key>IDECodeSnippetUserSnippet</key>

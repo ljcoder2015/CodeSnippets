@@ -9,10 +9,11 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>let &lt;#name#&gt;Variabel = Variable&lt;String&gt;("")
+	<string>let &lt;#name#&gt;Variabel = BehaviorRelay&lt;String&gt;(value: )
 _ = &lt;#textField#&gt;.rx.textInput &lt;-&gt; &lt;#Variabel#&gt;
 &lt;#Variabel#&gt;.asObservable()
-            .subscribe(onNext: { [unowned self] (text) in
+            .subscribe(onNext: { [weak self] (text) in
+                guard let `self` = self else { return }
                 
             })
             .disposed(by: disposeBag)</string>
@@ -20,6 +21,8 @@ _ = &lt;#textField#&gt;.rx.textInput &lt;-&gt; &lt;#Variabel#&gt;
 	<string>B5C64960-165A-4CCD-8BBD-D755214B8740</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
 	<string>text bind</string>
 	<key>IDECodeSnippetUserSnippet</key>

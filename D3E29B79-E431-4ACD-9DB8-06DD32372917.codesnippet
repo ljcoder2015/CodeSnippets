@@ -9,7 +9,7 @@
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    fileprivate lazy var &lt;#name#&gt;: UICollectionView = {
+	<string>    private lazy var &lt;#name#&gt;: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         let collection = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collection.dataSource = self
@@ -21,6 +21,8 @@
 	<string>D3E29B79-E431-4ACD-9DB8-06DD32372917</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
 	<string>UICollectionView-swift</string>
 	<key>IDECodeSnippetUserSnippet</key>
