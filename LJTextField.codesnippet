@@ -17,8 +17,10 @@
 	<string>70BB1109-6892-40D5-9D70-B2BD0D6D334F</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>LJTextField-Swift</string>
+	<string>LJTextField Create</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

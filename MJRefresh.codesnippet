@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>mj_refresh</string>
+	<string>MJRefresh</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
@@ -58,7 +58,7 @@ self.tableView.mj_header?.beginRefreshing()</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>mjRefresh</string>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
 	<string>MJRefresh</string>
 	<key>IDECodeSnippetUserSnippet</key>

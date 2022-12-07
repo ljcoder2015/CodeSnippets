@@ -24,7 +24,7 @@ _ = &lt;#textField#&gt;.rx.textInput &lt;-&gt; &lt;#Variabel#&gt;
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>text bind</string>
+	<string>TextBind</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
