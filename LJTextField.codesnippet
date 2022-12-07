@@ -3,19 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>json</string>
+	<string>LJTextField</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (strong, nonatomic) &lt;#class#&gt; *&lt;#name#&gt;;</string>
+	<string>private lazy var &lt;#textField#&gt;: UITextField = {
+        let textField: UITextField = UITextField.lj.textField(placeholder: &lt;#placeholder#&gt;, leftView: &lt;#left#&gt;, rightView: &lt;#right#&gt;)
+        return textField
+    }()</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>59CFF74C-03BA-4245-85EB-EC3A6ED7857C</string>
+	<string>70BB1109-6892-40D5-9D70-B2BD0D6D334F</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>property</string>
+	<string>LJTextField-Swift</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

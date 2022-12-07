@@ -3,22 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>setupUI</string>
+	<string>ljbutton</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#pragma mark - setupUI
-- (void)setupUI {
-    
-}</string>
+	<string>private lazy var &lt;#button#&gt;: UIButton = {
+        let button = UIButton.lj.button(title: &lt;#title#&gt;, titleColor: &lt;#color#&gt;, image: &lt;#image#&gt;)
+        return button
+    }()</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>1C481406-4229-4E48-A3A3-BCA88C4C03A1</string>
+	<string>2CF7FF8E-AE75-4184-A086-7443045375A6</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>setupUI-OC</string>
+	<string>ljButton</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
